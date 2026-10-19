@@ -233,8 +233,8 @@
 <div id="captionBox"><div id="caption"></div></div>
 
 <div id="actions">
-  <a class="btn main" id="gift" href="qua.html">🎁 chọn quà</a>
-  <button class="btn" id="replay">xem lại</button>
+  <a class="btn main" id="gift" href="qua.html">🎁 Chọn quà</a>
+  <button class="btn" id="replay">Xem lại</button>
 </div>
 
 <button id="sound" aria-label="Bật/tắt âm thanh">🔇</button>
@@ -243,9 +243,9 @@
 
 <div id="start">
   <div class="big">20/10</div>
-  <p>có một lời chúc nhỏ<br>dành cho cậu</p>
-  <div class="tap">chạm để bắt đầu</div>
-  <p style="font-size:1.1rem;margin-top:14px;opacity:.7">bật âm thanh để nghe trọn vẹn nhé</p>
+  <p>Có một lời chúc nhỏ<br>dành cho cậu.</p>
+  <div class="tap">Chạm để bắt đầu</div>
+  <p style="font-size:1.1rem;margin-top:14px;opacity:.7">Bật âm thanh để nghe trọn vẹn nhé.</p>
 </div>
 
 <script>
@@ -262,7 +262,7 @@
     `Cảm ơn ${YOU} vì đã lo cho ${ME}, dù đôi khi chính ${YOU} cũng đang mệt ☾`,
     `Cảm ơn ${YOU} vì nhớ những điều nhỏ xíu mà ${ME} hay quên ✿`,
     `Cảm ơn ${YOU} vì nụ cười làm cả một ngày dài nhẹ đi ☀`,
-    `${YOU} Có thể không nhận ra, nhưng ${YOU} là điều đẹp nhất trong những ngày của ${ME} ✦`,
+    `${YOU.charAt(0).toUpperCase()+YOU.slice(1)} có thể không nhận ra, nhưng ${YOU} là điều đẹp nhất trong những ngày của ${ME} ✦`,
     `Mong ${YOU} luôn được yêu thương đúng như cách ${YOU} đã yêu thương người khác ♡`,
     `Chúc mừng ngày Phụ nữ Việt Nam 20/10, người phụ nữ của ${ME}.`,
     `Mong mỗi ngày của ${YOU} đều có hoa, có nắng, có tiếng cười — và có ${ME} ở bên cạnh ♥`
@@ -559,7 +559,7 @@
     ensureAudio(); soundOn=true; soundBtn.textContent='🔊'; arpeggio(); startPad();
     startEl.classList.add('gone'); started=true;
     setTimeout(()=>playLine(0),900);
-    setTimeout(()=>toast('chạm 💧 bên phải để tưới nước cho bé nhé'),9000);
+    setTimeout(()=>toast('Chạm 💧 bên phải để tưới nước cho bé nhé'),9000);
   });
 
   document.addEventListener('click',e=>{
